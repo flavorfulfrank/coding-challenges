@@ -1,5 +1,5 @@
 //Take a positive number
-//Return the number of times you multiply the digits in num until you reach a single digit
+//Return the number of times you must multiply the digits in num until a single digit is reached
 function persistence(num) {
     let passes = 0;
     while (num >= 10) {
