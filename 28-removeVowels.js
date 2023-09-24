@@ -1,4 +1,5 @@
-//Take a string and return the string with all vowels removed
+//Take a string
+//Return the string with all vowels removed
 function removeVowels(str) {
   return str
     .split("")
