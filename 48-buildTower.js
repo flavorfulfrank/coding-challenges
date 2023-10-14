@@ -13,11 +13,11 @@
 
 function towerBuilder(nFloors) {
   let tower = [];
-  let stars = 1 + 2 * (nFloors - 1);
-  for (let i = nFloors; i > 0; i--) {
-    const emptySpace = " ".repeat(nFloors - i);
+  let stars = 1;
+  for (let i = 0; i < nFloors; i++) {
+    const emptySpace = " ".repeat(nFloors - i - 1);
     tower.push(emptySpace + "*".repeat(stars) + emptySpace);
-    stars -= 2;
+    stars += 2;
   }
-  return tower.reverse();
+  return tower;
 }
