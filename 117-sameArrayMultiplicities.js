@@ -30,8 +30,5 @@ function comp(array1, array2) {
   if (!array1 || !array2) return false;
   array1 = array1.map((number) => number * number).sort((a, b) => a - b);
   array2 = array2.sort((a, b) => a - b);
-  for (let i = array1.length; i >= 0; i--) {
-    if (array1[i] !== array2[i]) return false;
-  }
-  return true;
+  return array1.every((number, index) => number === array2[index]);
 }
